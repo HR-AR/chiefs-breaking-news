@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKING: Kansas City Chiefs Select Amir in Surprise 2026 NFL Draft Pick | SportsCenter Live</title>
+    <meta name="description" content="In a stunning move, the Kansas City Chiefs have selected Amir with their compensatory pick in the 2026 NFL Draft.">
+    <meta property="og:title" content="BREAKING: Chiefs Draft Amir in Surprise 2026 Pick">
+    <meta property="og:description" content="Kansas City shocks the league with unexpected draft selection.">
+    <meta property="og:type" content="article">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #e8e8e8;
+            line-height: 1.6;
+        }
+
+        /* BREAKING NEWS TICKER */
+        .ticker-wrap {
+            background: #e11d48;
+            overflow: hidden;
+            padding: 6px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        .ticker {
+            display: flex;
+            animation: ticker 30s linear infinite;
+            white-space: nowrap;
+        }
+        .ticker span {
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 0 80px;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* NAV BAR */
+        .nav {
+            background: #111;
+            border-bottom: 3px solid #e11d48;
+            padding: 12px 0;
+            position: fixed;
+            top: 31px;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+            letter-spacing: -0.5px;
+        }
+        .nav-logo span { color: #e11d48; }
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-links a {
+            color: #999;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: white; }
+        .nav-links a.active { color: #e11d48; }
+
+        /* MAIN CONTENT */
+        .main { max-width: 900px; margin: 0 auto; padding: 120px 20px 60px; }
+
+        /* BREAKING BADGE */
+        .breaking-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #e11d48;
+            color: white;
+            padding: 6px 16px;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .breaking-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            animation: blink 1s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .category {
+            color: #e11d48;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 900;
+            line-height: 1.1;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #aaa;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            border-left: 3px solid #e11d48;
+            padding-left: 16px;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 0;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .meta-author {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .meta-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e11d48, #be123c);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .meta-name { font-weight: 600; font-size: 14px; color: white; }
+        .meta-role { font-size: 12px; color: #666; }
+        .meta-time {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .meta-time::before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background: #e11d48;
+            border-radius: 50%;
+        }
+        .live-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #e11d48;
+            border-radius: 50%;
+            animation: blink 1s ease-in-out infinite;
+            margin-right: 4px;
+        }
+
+        /* HERO IMAGE */
+        .hero-image {
+            width: 100%;
+            margin-bottom: 32px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: contrast(1.05) saturate(1.1);
+        }
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.9));
+            padding: 40px 24px 16px;
+        }
+        .hero-caption {
+            font-size: 13px;
+            color: #ccc;
+            font-style: italic;
+        }
+        .hero-credit {
+            font-size: 11px;
+            color: #666;
+            margin-top: 4px;
+        }
+        .chiefs-watermark {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(227, 24, 55, 0.9);
+            color: white;
+            padding: 8px 16px;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* ARTICLE BODY */
+        .article-body p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 24px;
+        }
+        .article-body p:first-of-type::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            float: left;
+            line-height: 0.8;
+            padding-right: 12px;
+            padding-top: 4px;
+            color: #e11d48;
+            font-weight: 900;
+        }
+        .article-body strong { color: white; }
+
+        .pullquote {
+            border-left: 4px solid #e11d48;
+            padding: 20px 24px;
+            margin: 32px 0;
+            background: #111;
+        }
+        .pullquote p {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px !important;
+            font-style: italic;
+            color: white !important;
+            line-height: 1.5 !important;
+            margin-bottom: 8px !important;
+        }
+        .pullquote cite {
+            font-size: 13px;
+            color: #e11d48;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        /* STATS BOX */
+        .stats-box {
+            background: linear-gradient(135deg, #1a1a1a, #111);
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 28px;
+            margin: 32px 0;
+        }
+        .stats-box h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #e11d48;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #222;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 20px;
+        }
+        .stat-item { text-align: center; }
+        .stat-value {
+            font-size: 32px;
+            font-weight: 900;
+            color: white;
+        }
+        .stat-label {
+            font-size: 11px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 4px;
+        }
+
+        /* RELATED STORIES */
+        .related {
+            border-top: 2px solid #222;
+            padding-top: 32px;
+            margin-top: 48px;
+        }
+        .related h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #e11d48;
+            margin-bottom: 20px;
+        }
+        .related-list { list-style: none; }
+        .related-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .related-list a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+        .related-list a:hover { color: #e11d48; }
+        .related-time { font-size: 12px; color: #555; margin-top: 4px; }
+
+        /* SOCIAL SHARE BAR */
+        .share-bar {
+            display: flex;
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .share-btn {
+            padding: 8px 20px;
+            border: 1px solid #333;
+            background: transparent;
+            color: #999;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .share-btn:hover {
+            border-color: #e11d48;
+            color: #e11d48;
+        }
+
+        /* FOOTER */
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            border-top: 1px solid #1a1a1a;
+            text-align: center;
+        }
+        footer p {
+            font-size: 12px;
+            color: #444;
+        }
+
+        /* FLOATING LIVE INDICATOR */
+        .live-indicator {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(17, 17, 17, 0.95);
+            border: 1px solid #e11d48;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* READING PROGRESS BAR */
+        .progress-bar {
+            position: fixed;
+            top: 76px;
+            left: 0;
+            height: 3px;
+            background: #e11d48;
+            z-index: 1001;
+            transition: width 0.1s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TICKER -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>BREAKING NEWS: Kansas City Chiefs make surprise draft pick</span>
+            <span>NFL DRAFT 2026: Amir selected by KC Chiefs</span>
+            <span>Patrick Mahomes reacts: "We got our guy"</span>
+            <span>Chiefs GM confirms: "This changes everything for our franchise"</span>
+            <span>BREAKING NEWS: Kansas City Chiefs make surprise draft pick</span>
+            <span>NFL DRAFT 2026: Amir selected by KC Chiefs</span>
+            <span>Patrick Mahomes reacts: "We got our guy"</span>
+            <span>Chiefs GM confirms: "This changes everything for our franchise"</span>
+        </div>
+    </div>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">SPORTS<span>CENTER</span></div>
+            <div class="nav-links">
+                <a href="#" class="active">NFL</a>
+                <a href="#">NBA</a>
+                <a href="#">MLB</a>
+                <a href="#">NCAA</a>
+                <a href="#">Fantasy</a>
+                <a href="#">More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN ARTICLE -->
+    <main class="main">
+        <div class="breaking-badge">BREAKING NEWS</div>
+        <div class="category">NFL Draft 2026 / Kansas City Chiefs</div>
+
+        <h1>Chiefs Stun NFL World, Select Amir With Compensatory Pick in 2026 Draft</h1>
+
+        <p class="subtitle">In what scouts are calling "the most unexpected selection since Tom Brady," Kansas City secures the player Patrick Mahomes personally requested.</p>
+
+        <div class="meta">
+            <div class="meta-author">
+                <div class="meta-avatar">AP</div>
+                <div>
+                    <div class="meta-name">Adam Schefter</div>
+                    <div class="meta-role">Senior NFL Insider</div>
+                </div>
+            </div>
+            <div class="meta-time"><span class="live-dot"></span> LIVE &mdash; Updated 3 minutes ago</div>
+            <div class="meta-time">April 8, 2026</div>
+        </div>
+
+        <div class="share-bar">
+            <button class="share-btn">Share</button>
+            <button class="share-btn">Tweet</button>
+            <button class="share-btn">Save</button>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image">
+            <img src="amir.jpg" alt="Amir moments after receiving the call from the Kansas City Chiefs front office">
+            <div class="chiefs-watermark">KC CHIEFS DRAFT 2026</div>
+            <div class="hero-overlay">
+                <div class="hero-caption">Amir captured moments after receiving the call from Chiefs GM Brett Veach, confirming his selection.</div>
+                <div class="hero-credit">Photo: Associated Press / Getty Images Sport</div>
+            </div>
+        </div>
+
+        <!-- ARTICLE BODY -->
+        <div class="article-body">
+            <p>Kansas City, MO &mdash; The Kansas City Chiefs sent shockwaves through the NFL on Tuesday, using their compensatory fourth-round pick to select <strong>Amir</strong>, a previously undiscovered talent who multiple league sources describe as "a generational athlete hiding in plain sight."</p>
+
+            <p>The pick, which came at No. 132 overall, immediately drew comparisons to some of the greatest late-round steals in NFL history. Chiefs head coach Andy Reid, known for his unconventional scouting methods, reportedly pushed aggressively for the selection after a private workout that left the coaching staff "genuinely speechless," according to three people with direct knowledge of the session.</p>
+
+            <div class="pullquote">
+                <p>"When we saw what Amir could do, we knew we couldn't let him leave the building without a commitment. I've been coaching for over 30 years, and I called my wife after the workout and told her we just found something special."</p>
+                <cite>&mdash; Andy Reid, Chiefs Head Coach</cite>
+            </div>
+
+            <p>Quarterback <strong>Patrick Mahomes</strong>, who was present at the workout, immediately took to social media to celebrate the pick. "We got our guy," Mahomes posted on X, accompanied by a series of fire emojis that quickly went viral, amassing over 2.4 million impressions within the first hour.</p>
+
+            <p>The selection caps a meteoric rise for Amir, who was not on any major scouting board entering draft season. NFL Network analyst Daniel Jeremiah called it "the most intriguing pick of the entire draft," noting that the Chiefs' analytics department had been tracking Amir's athletic metrics for months through what sources describe as a proprietary talent identification algorithm developed in partnership with a tech company based in Bentonville, Arkansas.</p>
+
+            <div class="stats-box">
+                <h3>Amir &mdash; Scouting Combine Unofficial Numbers</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">4.31</div>
+                        <div class="stat-label">40-Yard Dash</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">42"</div>
+                        <div class="stat-label">Vertical Jump</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">6'2"</div>
+                        <div class="stat-label">Height</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">217</div>
+                        <div class="stat-label">Weight (lbs)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">33.5"</div>
+                        <div class="stat-label">Arm Length</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">9.8</div>
+                        <div class="stat-label">Hand Size (in)</div>
+                    </div>
+                </div>
+            </div>
+
+            <p>What makes the selection even more remarkable is the personal connection. Multiple sources confirm that Mahomes first encountered Amir during an offseason charity event, where Amir reportedly outran several current NFL players in an informal 40-yard dash competition. "Patrick wouldn't stop talking about him for weeks," one team source told SportsCenter. "He kept saying, 'You need to get this guy in here.'"</p>
+
+            <p>Chiefs General Manager <strong>Brett Veach</strong> addressed the pick in a post-draft press conference, describing the decision as one driven by "conviction over convention."</p>
+
+            <div class="pullquote">
+                <p>"Everyone in this league is looking at the same film, the same combine numbers, the same schools. We believe the next competitive advantage in the NFL is finding elite talent in places nobody else is looking. Amir is that advantage."</p>
+                <cite>&mdash; Brett Veach, Chiefs General Manager</cite>
+            </div>
+
+            <p>The Chiefs have assigned Amir the jersey number <strong>87</strong> &mdash; a move widely interpreted as a statement of intent, given that Travis Kelce recently transitioned to a part-time role. League sources indicate that Amir's contract includes a fully guaranteed four-year deal worth $5.2 million, with an additional $1.8 million in performance incentives.</p>
+
+            <p>Social media reaction has been extraordinary. The hashtag <strong>#AmirToKC</strong> trended at No. 1 on X within 18 minutes of the pick being announced, surpassing the first overall selection for the first time in platform history. A Change.org petition to give Amir the key to Kansas City has already gathered over 340,000 signatures.</p>
+
+            <p>NFL analysts across the league are now scrambling to evaluate the pick. Former NFL executive and current CBS Sports analyst <strong>Rick Spielman</strong> offered a measured assessment: "I've never seen a team this confident in a player with this little traditional tape. Either Kansas City has lost their minds, or they've found the next great weapon in professional football. Knowing Andy and Brett, I'd bet on the latter."</p>
+
+            <p>Amir is expected to report to the Chiefs' training facility in Kansas City on May 1 for the start of rookie minicamp. The team has already begun preparing a custom development program that sources describe as "unlike anything we've designed for a rookie before."</p>
+
+            <p><em>This is a developing story. Check back for updates as more details emerge from Kansas City.</em></p>
+        </div>
+
+        <!-- RELATED STORIES -->
+        <div class="related">
+            <h3>Related Stories</h3>
+            <ul class="related-list">
+                <li>
+                    <a href="#">Mahomes on Amir: "He's going to change this franchise forever"</a>
+                    <div class="related-time">12 minutes ago</div>
+                </li>
+                <li>
+                    <a href="#">Chiefs analytics team reveals AI-powered scouting system behind the Amir pick</a>
+                    <div class="related-time">28 minutes ago</div>
+                </li>
+                <li>
+                    <a href="#">Full 2026 NFL Draft results: Round-by-round picks and analysis</a>
+                    <div class="related-time">1 hour ago</div>
+                </li>
+                <li>
+                    <a href="#">Andy Reid's history of unconventional draft picks that became superstars</a>
+                    <div class="related-time">2 hours ago</div>
+                </li>
+                <li>
+                    <a href="#">Travis Kelce congratulates Amir: "I'm passing the torch to the right guy"</a>
+                    <div class="related-time">3 hours ago</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SportsCenter Live. All rights reserved. A division of Sports Media Networks.</p>
+        <p style="margin-top: 8px; color: #333;">Associated Press contributed to this report.</p>
+    </footer>
+
+    <!-- LIVE INDICATOR -->
+    <div class="live-indicator">
+        <span class="live-dot"></span>
+        LIVE UPDATES
+    </div>
+
+    <script>
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        });
+
+        // Fake "updated X minutes ago" that ticks up
+        let minutes = 3;
+        setInterval(() => {
+            minutes++;
+            const timeEls = document.querySelectorAll('.meta-time');
+            if (timeEls[0]) {
+                timeEls[0].innerHTML = '<span class="live-dot"></span> LIVE &mdash; Updated ' + minutes + ' minutes ago';
+            }
+        }, 60000);
+
+        // Console easter egg
+        console.log('%c CHIEFS KINGDOM ', 'background: #e11d48; color: white; font-size: 20px; font-weight: bold; padding: 10px;');
+        console.log('%c Welcome to the future of KC football.', 'color: #ccc; font-size: 14px;');
+    </script>
+</body>
+</html>
